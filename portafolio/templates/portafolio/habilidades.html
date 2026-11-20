@@ -1,0 +1,14 @@
+{% extends 'portafolio/base.html' %}
+{% block content %}
+<section class="page-shell page-intro">
+  <p class="eyebrow">02 / HABILIDADES</p><h1>Conocimiento que<br>se pone en práctica.</h1>
+  <p class="intro-line">Una base técnica en crecimiento, con atención a las personas y disposición para aprender.</p>
+</section>
+<section class="page-shell skills-grid">
+  <article class="skill-card"><span class="eyebrow">01</span><h2>Soporte técnico</h2><h3>Soporte a usuarios</h3><p>Experiencia práctica</p><h3>Diagnóstico de fallas</h3><p>Experiencia práctica</p><h3>Equipos y mantenimiento</h3><p>Experiencia práctica</p></article>
+  <article class="skill-card"><span class="eyebrow">02</span><h2>Redes y operación</h2><h3>Redes LAN</h3><p>Básico / formación</p><h3>Documentación técnica</h3><p>Experiencia práctica</p><h3>Ofimática</h3><p>Experiencia práctica</p></article>
+  <article class="skill-card"><span class="eyebrow">03</span><h2>Comunicación</h2><h3>Atención a usuarios</h3><p>Experiencia práctica</p><h3>Español</h3><p>Nativo</p><h3>Kaqchikel</h3><p>Fluido</p></article>
+</section>
+<aside class="page-shell dark-panel skill-note"><h2>Sin porcentajes. Con contexto.</h2><p>Experiencia práctica: conocimientos aplicados en tareas de soporte. Básico / formación: fundamentos que continúo desarrollando durante mis estudios.</p></aside>
+<div class="page-shell section-action"><a class="button" href="{% url 'portafolio:proyectos' %}">Conocer proyectos <span aria-hidden="true">↗</span></a></div>
+{% endblock %}

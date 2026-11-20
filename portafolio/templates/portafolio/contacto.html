@@ -1,0 +1,17 @@
+{% extends 'portafolio/base.html' %}
+{% block content %}
+<section class="page-shell page-intro">
+  <p class="eyebrow">04 / CONTACTO</p><h1>Hablemos de tecnología.</h1>
+  <p class="intro-line">¿Tienes una consulta o una oportunidad de aprendizaje? Puedes escribirme por estos medios.</p>
+</section>
+<section class="page-shell contact-grid">
+  <article class="dark-panel contact-details"><h2>Un mensaje puede ser<br>un buen comienzo.</h2><dl><dt>Correo</dt><dd><a href="mailto:melvinlo4249@gmail.com">melvinlo4249@gmail.com</a></dd><dt>Teléfono</dt><dd><a href="tel:+50258100616">+502 5810-0616</a></dd><dt>Ubicación</dt><dd>San Juan Comalapa,<br>Chimaltenango, Guatemala</dd></dl><p class="small-note">Sin perfiles de redes sociales enlazados.</p></article>
+  <form class="contact-form" id="contact-form" novalidate>
+    <div class="form-field"><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required><span class="field-error" id="name-error"></span></div>
+    <div class="form-field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required><span class="field-error" id="email-error"></span></div>
+    <div class="form-field"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte." required></textarea><span class="field-error" id="message-error"></span></div>
+    <button class="button" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite">Prototipo de formulario: no envía datos a ningún servidor.</p>
+  </form>
+</section>
+{% endblock %}

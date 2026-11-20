@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Melvin Rolando Colaj Poyón, estudiante de Ingeniería en Sistemas y técnico de soporte.">
+  <title>{{ page_title }} | Melvin Colaj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'portafolio/css/estilos.css' %}">
+  <script src="{% static 'portafolio/js/main.js' %}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="{% url 'portafolio:inicio' %}" aria-label="Melvin Colaj, ir al inicio">
+      <span class="brand-mark">MC</span><span class="brand-name">MELVIN COLAJ / PORTAFOLIO</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a class="{% if current_page == 'inicio' %}is-active{% endif %}" href="{% url 'portafolio:inicio' %}">Inicio</a>
+      <a class="{% if current_page == 'sobre_mi' %}is-active{% endif %}" href="{% url 'portafolio:sobre_mi' %}">Sobre mí</a>
+      <a class="{% if current_page == 'habilidades' %}is-active{% endif %}" href="{% url 'portafolio:habilidades' %}">Habilidades</a>
+      <a class="{% if current_page == 'proyectos' %}is-active{% endif %}" href="{% url 'portafolio:proyectos' %}">Proyectos</a>
+      <a class="{% if current_page == 'contacto' %}is-active{% endif %}" href="{% url 'portafolio:contacto' %}">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">{% block content %}{% endblock %}</main>
+
+  <footer class="site-footer">
+    <div><a class="footer-name" href="{% url 'portafolio:inicio' %}">MC / Melvin Colaj</a><p>Tecnología con sentido humano.</p></div>
+    <span>Guatemala · 2026</span>
+  </footer>
+</body>
+</html>

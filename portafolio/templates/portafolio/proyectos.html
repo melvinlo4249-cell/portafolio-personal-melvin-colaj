@@ -1,0 +1,20 @@
+{% extends 'portafolio/base.html' %}
+{% load static %}
+{% block content %}
+<section class="page-shell page-intro">
+  <p class="eyebrow">03 / PROYECTOS</p><h1>Ideas en construcción.</h1>
+  <p class="intro-line">Proyectos personales en desarrollo para explorar soluciones a necesidades de soporte, organización y redes.</p>
+</section>
+<section class="page-shell project-tools" aria-label="Filtros de proyectos">
+  <span>Filtrar por tecnología</span>
+  <div class="filter-list"><button class="filter-button is-selected" type="button" data-filter="all" aria-pressed="true">Todos</button><button class="filter-button" type="button" data-filter="django" aria-pressed="false">Django</button><button class="filter-button" type="button" data-filter="html" aria-pressed="false">HTML</button><button class="filter-button" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button></div>
+</section>
+<section class="page-shell project-grid" aria-label="Propuestas de proyectos">
+  <article class="project-card" data-tags="django html"><img src="{% static 'portafolio/img/inventario.svg' %}" alt="Ilustración conceptual de equipos organizados en un inventario"><div class="project-copy"><span class="eyebrow">EN DESARROLLO</span><h2>Inventario de equipo</h2><p>Organización por categoría, estado y ubicación.</p><span class="tech-label">Tecnologías propuestas</span><p class="tech-list">Django · HTML · CSS</p><span class="concept-note">Ilustración conceptual · Sin demo pública</span></div></article>
+  <article class="project-card" data-tags="javascript html"><img src="{% static 'portafolio/img/incidencias.svg' %}" alt="Ilustración conceptual de una lista de incidencias"><div class="project-copy"><span class="eyebrow">EN DESARROLLO</span><h2>Registro de incidencias</h2><p>Registro con filtros por tipo y estado para dar seguimiento al soporte.</p><span class="tech-label">Tecnologías propuestas</span><p class="tech-list">HTML · CSS · JavaScript</p><span class="concept-note">Ilustración conceptual · Sin demo pública</span></div></article>
+  <article class="project-card" data-tags="django javascript html"><img src="{% static 'portafolio/img/redes.svg' %}" alt="Ilustración conceptual de nodos de una red local"><div class="project-copy"><span class="eyebrow">EN DESARROLLO</span><h2>Guía interactiva de redes LAN</h2><p>Fundamentos y conceptos para acompañar el aprendizaje de redes locales.</p><span class="tech-label">Tecnologías propuestas</span><p class="tech-list">Django · HTML · CSS · JavaScript</p><span class="concept-note">Ilustración conceptual · Sin demo pública</span></div></article>
+</section>
+<aside class="page-shell dark-panel skill-note"><h2>Primero comprender. Después construir.</h2><p>Los tres proyectos están en desarrollo. Django, HTML, CSS y JavaScript son tecnologías propuestas. Las imágenes son ilustrativas; todavía no hay demos ni repositorios públicos enlazados.</p></aside>
+<div class="page-shell section-action"><a class="button" href="{% url 'portafolio:contacto' %}">Conversemos <span aria-hidden="true">↗</span></a></div>
+<p class="sr-only" id="filter-status" aria-live="polite"></p>
+{% endblock %}

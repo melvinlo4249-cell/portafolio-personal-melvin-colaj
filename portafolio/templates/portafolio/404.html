@@ -1,0 +1,4 @@
+{% extends 'portafolio/base.html' %}
+{% block content %}
+<section class="page-shell error-page"><p class="eyebrow">ERROR 404</p><h1>Esta página no aparece por aquí.</h1><p class="intro-line">Puede que el enlace haya cambiado o que la dirección esté escrita incorrectamente.</p><a class="button" href="{% url 'portafolio:inicio' %}">Volver al inicio <span aria-hidden="true">↗</span></a></section>
+{% endblock %}

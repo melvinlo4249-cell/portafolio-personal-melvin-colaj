@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">Conexiones y soporte</title><desc id="desc">Ilustración conceptual de una red de dispositivos conectados.</desc>
+  <rect width="900" height="760" fill="#e3e3e1"/><g fill="none" stroke="#92928f" stroke-width="3"><path d="M180 220 450 140 705 250M180 220 260 500 530 570 705 250M260 500 450 140 530 570M180 220 530 570M705 250 450 140"/></g>
+  <g fill="#f7f7f6" stroke="#292929" stroke-width="3"><circle cx="180" cy="220" r="54"/><circle cx="450" cy="140" r="64"/><circle cx="705" cy="250" r="52"/><circle cx="260" cy="500" r="48"/><circle cx="530" cy="570" r="58"/></g>
+  <g fill="#292929"><circle cx="180" cy="220" r="16"/><path d="M432 124h36v32h-36zM688 234h34v30h-34zM245 488h30v24h-30zM512 555h36v30h-36z"/></g>
+  <g font-family="Arial,sans-serif" fill="#555" font-size="20"><text x="70" y="340">ESCUCHAR</text><text x="610" y="430">DIAGNOSTICAR</text><text x="330" y="690">CONECTAR PERSONAS Y TECNOLOGÍA</text></g>
+</svg>
