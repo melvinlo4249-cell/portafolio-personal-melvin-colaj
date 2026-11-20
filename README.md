@@ -1,6 +1,6 @@
 # Portafolio personal — Melvin Colaj
 
-Proyecto académico para **Introducción a la Programación Web**. Sitio personal hecho con Django, HTML, CSS y JavaScript. No usa modelos, base de datos, autenticación ni frameworks CSS.
+Proyecto Final: Portafolio personal
 
 ## Requisitos
 
